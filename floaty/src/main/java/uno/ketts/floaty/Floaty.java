@@ -208,6 +208,10 @@ public final class Floaty {
     public boolean isShown() {
         return FloatyManager.getInstance().isCurrent(managerCallback);
     }
+    
+    public FloatyContentLayout getView() {
+        return this.view;
+    }
 
     private void dispatchDismiss(@Callback.DismissEvent int event) {
         FloatyManager.getInstance().dismiss(managerCallback, event);
